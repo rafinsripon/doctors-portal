@@ -11,8 +11,8 @@ const CheckoutForm = ({ booking }) => {
   const elements = useElements();
   const { price, email, patient, _id } = booking;
 
+  
   useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
     fetch("https://doctors-portal-server-mocha.vercel.app/create-payment-intent", {
       method: "POST",
       headers: {

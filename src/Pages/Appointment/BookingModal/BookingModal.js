@@ -9,6 +9,7 @@ const BookingModal = ({ treatment,setTreatMent, selectedDate, refetch }) => {
   const date = format(selectedDate, "PP");
   const {user } = useContext(AuthContext);
 
+  //Hangle Booking
   const handleBooking = (event) => {
     event.preventDefault();
     const form = event.target;
